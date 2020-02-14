@@ -9,10 +9,29 @@
     "dist": "electron-builder"
   },
   "build": {
-    "target": "dmg",
+    "productName": "electron",
     "appId": "your.id",
     "mac": {
-      "category": "your.app.category.type"
+      "target": "dmg",
+      "category": "public.app-category.instant-messaging"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "displayLanguageSelector": true,
+      "language": 2052
     }
   },
   "repository": "https://github.com/shadow-Fiend/electron_process",
