@@ -16,6 +16,7 @@ function createWindow () {
     // show: false,
     backgroundColor: '#5a83b7',
     // icon: logo,
+    autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: true
     }
